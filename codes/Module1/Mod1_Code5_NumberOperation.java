@@ -2,6 +2,7 @@
 methods
 1. factorial()
 2. testArmstrong()
+3. reversNumber()
 4. testPrime()
 5. fibonacciSeries()
 6. Exit
@@ -64,6 +65,10 @@ class Operations{
  	public int testPrime()
 	{
 		// Please complete this code	
+	}
+	public int factorial()
+	{
+		// Please complete this code	
 	}	
 }
 public class NumberOperation
@@ -105,6 +110,7 @@ public class NumberOperation
 		    	}
 		    case 4:
 			System.exit(0);	
+		    //Add code to support all six operations	
         	    default:
         	    	System.out.println("Incorrect choice");
         	}
