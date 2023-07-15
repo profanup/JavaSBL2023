@@ -70,9 +70,10 @@ class Operations{
 	}
 	public int factorial()
 	{
-		int fact;
+		int fact=1;
 		// Please complete this code	
-	}	return fact;
+		return fact;
+	}
 }
 public class NumberOperation
 {
