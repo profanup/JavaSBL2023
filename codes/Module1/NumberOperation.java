@@ -11,10 +11,10 @@ import java.util.Scanner;
 class Operations{
 	private int input;
 	public Operations(int num)
-	{
+	{ // Input number on which we need to perform operations
 	   input = num;
 	}
-	public int testArmstrong()
+	public int testArmstrong() // method to find weather input is armstrong number or not
 	{
 	   int digit,flag=0,num=input,cubeSum=0;
 	   	
@@ -36,40 +36,43 @@ class Operations{
               flag=0;
            return flag;
 	}
-    	public void fibonacciSeries()
-	{
+   	public void fibonacciSeries()
+	{// print input number of terms from fibonnaci series
 		int a = 0, b = 1;
-            	System.out.print(a + " " + b);
-                for (int i = 3; i <= input; i++) 
-	    	{
-                	int term = a + b;
-                	System.out.print(" " + term);
-                	a = b;
-                	b = term;
-            	}
-            	System.out.println("");
+        System.out.print(a + " " + b);
+        for (int i = 3; i <= input; i++) 
+	    {
+           	int term = a + b;
+           	System.out.print(" " + term);
+           	a = b;
+           	b = term;
+        }
+        System.out.println("");
 	}
 	public int reverseNumber()
-	{
+	{// find reverse of input and return it
 		int rev = 0;
 		int R;
 		int number=input;
-            	while (number != 0) 
+        while (number != 0) 
 		{
-                	R = number%10;
-                	rev = rev*10+R;
-	     		number = number/10;
-            	}
+           	R = number%10;
+           	rev = rev*10+R;
+	        number = number/10;
+        }
 		return rev;
 	}
  	public int testPrime()
 	{
-		// Please complete this code	
+		int flag=0;
+		// Please complete this code
+		return flag;	
 	}
 	public int factorial()
 	{
+		int fact;
 		// Please complete this code	
-	}	
+	}	return fact;
 }
 public class NumberOperation
 {
@@ -78,7 +81,7 @@ public class NumberOperation
 	do
 	{
 		System.out.println("1. Fibonacci Series");
-        	System.out.println("2. Reverse of Number");
+       	System.out.println("2. Reverse of Number");
 		System.out.println("3. Check for Armstrong Number");
 		System.out.println("4. Exit");        	
 		System.out.print("Slect the operation: ");
@@ -88,32 +91,32 @@ public class NumberOperation
         	Operations Ops = new Operations(number);
  		switch (ch) 
 		{
-        	    case 1:
-        	    	{
-        	    	Ops.fibonacciSeries();
-			break;
+            case 1:
+           	{
+               	Ops.fibonacciSeries();
+		    	break;
 			}
-        	    case 2:
-        	    	{
-        	    	int rev=Ops.reverseNumber();
-        	    	System.out.println("Reverse of number " +number+ " is " + rev);
-        	    	break;
-		    	}
+            case 2:
+           	{
+            	int rev=Ops.reverseNumber();
+            	System.out.println("Reverse of number " +number+ " is " + rev);
+            	break;
+		   	}
 		    case 3:
-        	    	{
-        	    	int flag=Ops.testArmstrong();
-			if(flag==1)
-			   System.out.println("Given number " +number+ " is an Armstrong number");
-			else
-			   System.out.println("Reverse of number " +number+ " is not an Armstrong number");
-        	    	break;
-		    	}
+           	{
+            	int flag=Ops.testArmstrong();
+		    	if(flag==1)
+		    	   System.out.println("Given number " +number+ " is an Armstrong number");
+		    	else
+		    	   System.out.println("Reverse of number " +number+ " is not an Armstrong number");
+            	break;
+		   	}
 		    case 4:
-			System.exit(0);	
-		    //Add code to support all six operations	
-        	    default:
-        	    	System.out.println("Incorrect choice");
-        	}
+		    	System.exit(0);	
+		    //Add code to support all six operations also manage sequece properly	
+        	default:
+        	  	System.out.println("Incorrect choice");
+        }
 	}while(true);
     }
 }
