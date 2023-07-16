@@ -137,3 +137,8 @@ public class BankingApp {
             while (ch != 5);  
         }  
     }  
+    
+ /* Test all the cases of execution and copy paste the output here
+ 
+ 
+ */   
