@@ -41,7 +41,10 @@ class Novel extends Book {
 	@Override
 	public void display(){
 	System.out.println("\nISBN : "+isbn+"\nTitle: "+title+"\nprice: "+price+"\nAuthor:"+author);
-	}	
+	}
+ 	void partly_display(){
+		super.display();
+	}
 }
 
 class library{
@@ -51,7 +54,7 @@ class library{
         Novel n = new Novel(1234345,"The Ultimate Book of Coding",1200,"Gegory Jr");
         b.display();
         m.display();
-        n.display();  
-        
+        n.display();
+        n.partly_display();
      }
 }
