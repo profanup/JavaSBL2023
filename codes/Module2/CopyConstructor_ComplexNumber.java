@@ -32,7 +32,7 @@ class Complex {
 	@Override public String toString()
 	{
 
-		return "(" + re + " + " + im + "i)";
+		return "[(" + re + ") + (" + im + ")i]";
 	}
 }
 
@@ -56,7 +56,9 @@ class Main {
 		Complex c3 = c2;
 
 		// toString() of c2 is called here
+		System.out.println("First complex number is "+c1);
 		System.out.println(c2);
+		System.out.println(c3);
 	}
 }
 

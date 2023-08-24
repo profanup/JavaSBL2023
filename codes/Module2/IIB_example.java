@@ -11,6 +11,7 @@ class GfG {
 	public static void main(String[] args)
 	{
 		GfG a = new GfG();
+                GfG b = new GfG();
 	}
 }
 

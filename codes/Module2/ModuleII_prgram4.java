@@ -8,7 +8,7 @@ class vector
 {
    public static void main(String args[])
    {
-     Vector c= new Vector();
+      r c= new Vector();
      Scanner obj=new Scanner(System.in); 
      int n;
      String str;

@@ -39,10 +39,10 @@ class Derived extends Base
 	public static void main(String args[])
 	{
 		// calls parameterized constructor 4
-		//Derived obj = new Derived("test");
+		Derived objTest = new Derived("test");
 
 		// Calls No-argument constructor
-		Derived obj = new Derived();
+		Derived objNoname = new Derived();
 	}
 }
 
