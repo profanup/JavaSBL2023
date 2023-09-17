@@ -21,13 +21,16 @@ public class AmountInWords {
             return onesPlace[num];
         } else if (num < 20) {
             return teens[num - 10];
-        } else {
-            return tensPlace[num / 10] + (num % 10 != 0 ? " " + onesPlace[num % 10] : "");
+        } else if (num<100){
+            return tensPlace[(num/10)] + (num % 10 != 0 ? " " + onesPlace[num % 10] : "");
+        }
+        else{
+            return onesPlace[(num/100)] +" Hundred and "+ convertToWords(num%100); 
         }
     }
 
     public static String amountInWords(int amount) {
-        if (amount < 0 || amount > 100000) {
+        if (amount < 0 || amount > 1000000) {
             return "Invalid amount";
         }
 
