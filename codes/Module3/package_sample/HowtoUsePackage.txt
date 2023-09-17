@@ -1,0 +1,7 @@
+Execute following steps to execute: 
+
+$ javac AmountInWords.java ConvertAmountToWords.java 
+$ mkdir myapp
+$ mv AmountInWords.class myapp/
+$ mv ConvertAmountToWords.class myapp/
+$ java myapp.ConvertAmountToWords 
